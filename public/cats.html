@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Famous Sea Otters — Sea Otters</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="site-header-top">
+      <a href="/" class="logo-link">
+        <img src="images/so-title.jpg" alt="Sea otter swimming in blue ocean water, Sea Otters website logo"
+          class="logo-img" width="100" height="100">
+      </a>
+      <h1 class="site-title">Famous Sea Otters</h1>
+      <button class="hamburger-btn" aria-label="Toggle navigation menu">
+        &#9776;
+      </button>
+    </div>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul class="nav-list" id="nav-menu">
+        <li><a class="nav-link" href="/">Home</a></li>
+        <li><a class="nav-link" href="/cats.html">Famous Sea Otters</a></li>
+        <li><a class="nav-link" href="/events.html">Events</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <div class="cards-grid">
+
+      <article class="otter-card">
+        <h2 class="card-name">Kelp the Explorer</h2>
+        <img src="images/so-kelp-forest.jpg"
+          alt="Underwater view of a sunlit kelp forest with golden-green kelp fronds and shafts of light"
+          class="card-img" width="200" height="200">
+        <div class="card-body">
+          <p class="card-description">
+            Dolor nulla repellendus quisquam optio in. In optio distinctio doloremque.
+          </p>
+          <p class="card-description">
+            Ipsum lorem sit <button class="subscribe-btn" type="button">Subscribe</button> voluptate inventore.
+          </p>
+        </div>
+      </article>
+
+      <article class="otter-card">
+        <h2 class="card-name">Aqua the Showstopper</h2>
+        <img src="images/so-aquarium.jpg"
+          alt="A school of fish swimming in a large well-lit aquarium tank with blue water" class="card-img" width="200"
+          height="200">
+        <div class="card-body">
+          <p class="card-description">
+            Dolor nulla repellendus quisquam optio in. In optio distinctio doloremque.
+          </p>
+          <p class="card-description">
+            Ipsum lorem sit <button class="subscribe-btn" type="button">Subscribe</button> voluptate inventore.
+          </p>
+        </div>
+      </article>
+
+      <article class="otter-card">
+        <h2 class="card-name">Pip the Pup</h2>
+        <img src="images/so-otter-pups.jpg" alt="A group of young sea otters swimming together near the ocean surface"
+          class="card-img" width="200" height="200">
+        <div class="card-body">
+          <p class="card-description">
+            Dolor nulla repellendus quisquam optio in. In optio distinctio doloremque.
+          </p>
+          <p class="card-description">
+            Ipsum lorem sit <button class="subscribe-btn" type="button">Subscribe</button> voluptate inventore.
+          </p>
+        </div>
+      </article>
+
+      <article class="otter-card">
+        <h2 class="card-name">Rafi the Conservationist</h2>
+        <img src="images/so-conservation.jpg"
+          alt="Two sea otters floating side by side in the ocean, one eating while both look watchful" class="card-img"
+          width="200" height="200">
+        <div class="card-body">
+          <p class="card-description">
+            Dolor nulla repellendus quisquam optio in. In optio distinctio doloremque.
+          </p>
+          <p class="card-description">
+            Ipsum lorem sit <button class="subscribe-btn" type="button">Subscribe</button> voluptate inventore.
+          </p>
+        </div>
+      </article>
+
+      <article class="otter-card">
+        <h2 class="card-name">Marina the Diver</h2>
+        <img src="images/so-holding-hands.jpg" alt="Two sea otters floating on their backs in calm water, paws touching"
+          class="card-img" width="200" height="200">
+        <div class="card-body">
+          <p class="card-description">
+            Dolor nulla repellendus quisquam optio in. In optio distinctio doloremque.
+          </p>
+          <p class="card-description">
+            Ipsum lorem sit <button class="subscribe-btn" type="button">Subscribe</button> voluptate inventore.
+          </p>
+        </div>
+      </article>
+
+      <article class="otter-card">
+        <h2 class="card-name">Rocky the Tool User</h2>
+        <img src="images/so-tool-users.jpg"
+          alt="A sea otter floating on its back in the ocean surrounded by strands of green kelp" class="card-img"
+          width="200" height="200">
+        <div class="card-body">
+          <p class="card-description">
+            Dolor nulla repellendus quisquam optio in. In optio distinctio doloremque.
+          </p>
+          <p class="card-description">
+            Ipsum lorem sit <button class="subscribe-btn" type="button">Subscribe</button> voluptate inventore.
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Single modal dialog shared by all Subscribe buttons -->
+  <dialog class="subscribe-modal" id="subscribe-modal">
+    <h2 class="modal-title">Subscribe to the Latest News!</h2>
+
+    <form class="subscribe-form" id="subscribe-form" method="POST" action="/subscribe" novalidate>
+
+      <div class="form-field">
+        <label class="form-label" for="email">
+          Email: <span class="required-marker">* required</span>
+        </label>
+        <input class="form-input" type="text" id="email" name="email" autocomplete="email">
+        <span class="field-error" id="email-error"></span>
+      </div>
+
+      <div class="form-field">
+        <label class="form-label" for="confirm-email">
+          Confirm Email: <span class="required-marker">* required</span>
+        </label>
+        <input class="form-input" type="text" id="confirm-email" name="confirm-email" autocomplete="email">
+        <span class="field-error" id="confirm-email-error"></span>
+      </div>
+      <div class="form-actions">
+        <button type="submit" class="btn btn-submit">Subscribe</button>
+        <button type="button" class="btn btn-cancel" id="cancel-btn">Cancel</button>
+      </div>
+
+    </form>
+  </dialog>
+
+  <footer class="site-footer">
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <ul class="footer-nav-list">
+        <li><a class="footer-nav-link" href="/privacy.html">Privacy Policy</a></li>
+        <li><a class="footer-nav-link" href="/work.html">Work for Us</a></li>
+        <li><a class="footer-nav-link" href="/contact.html">Contact Us</a></li>
+        <li><a class="footer-nav-link" href="/social.html">Social Media</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
